@@ -65,6 +65,8 @@ fun OTPPlus(
     onValueChanged: (String) -> Unit = {},
     onComplete: (() -> Unit)? = null
 ) {
+    val otpSize = 6
+
     var hasFocused by remember { mutableStateOf(false) }
 
     val isError = errorMessage != null
@@ -91,7 +93,7 @@ fun OTPPlus(
 
     // Trigger onComplete callback when 6 digits are entered
     LaunchedEffect(value) {
-        if (value.length == 6) {
+        if (value.length == otpSize) {
             onComplete?.invoke()
         }
     }
@@ -103,7 +105,7 @@ fun OTPPlus(
         BasicTextField(
             value = value,
             onValueChange = {
-                if (it.length <= 6 && it.isDigitsOnly())
+                if (it.length <= otpSize && it.isDigitsOnly())
                     onValueChanged.invoke(it)
             },
             keyboardOptions = KeyboardOptions(
@@ -127,13 +129,13 @@ fun OTPPlus(
                     horizontalArrangement = Arrangement.spacedBy(innerSpace),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    repeat(6) { index ->
+                    repeat(otpSize) { index ->
                         val otpChar = when {
                             index >= value.length -> ""
                             else -> value[index].toString()
                         }
 
-                        val isFocused = if (value.length < 6)
+                        val isFocused = if (value.length < otpSize)
                             value.length == index && hasFocused
                         else value.length == index + 1
 
