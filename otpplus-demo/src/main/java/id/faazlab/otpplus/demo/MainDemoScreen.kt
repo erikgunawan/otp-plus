@@ -3,6 +3,7 @@ package id.faazlab.otpplus.demo
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -49,7 +50,7 @@ fun MainDemoScreen() {
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
 
-        Divider()
+        HorizontalDivider()
 
         // Scenario 1: Positive Scenario
         PositiveScenarioCard()
