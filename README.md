@@ -6,6 +6,8 @@
 
 A simple and customizable OTP (One-Time Password) input component for Android built with Jetpack Compose. Features include focus states, error handling with shake animation, auto-complete callback, and full customization support.
 
+> 📱 **Check out the [Demo App](#demo-app) section below to see screenshots and try it yourself!**
+
 ## Features
 
 - ✅ **6-Digit OTP Input** - Clean and intuitive input interface
@@ -356,6 +358,37 @@ This repository includes a demo app showcasing various usage scenarios of OTP+:
 4. **Auto-Complete Callback** - Automatic callback when 6 digits are entered
 5. **Focus Management** - Programmatic focus control
 6. **Custom Spacing** - Customizable spacing between boxes
+
+### Screenshots
+
+#### Main Demo Screen
+![OTP+ Demo Main Screen](screenshots/demo-main-screen.png)
+
+The demo app showcases all 6 usage scenarios in a clean, card-based interface.
+
+#### Positive Scenario
+![Positive Scenario](screenshots/demo-positive-scenario.png)
+
+Successfully validated OTP with visual feedback and success message.
+
+#### Error Scenario
+![Error Scenario](screenshots/demo-error-scenario.png)
+
+Error handling with shake animation and error message display.
+
+#### Empty Validation
+![Empty Validation](screenshots/demo-empty-validation.png)
+
+Validation for empty or incomplete OTP input.
+
+#### Auto-Complete Callback
+![Auto-Complete Callback](screenshots/demo-auto-complete.png)
+
+Automatic callback trigger when 6 digits are entered.
+
+> **Note**: A demo video is also available showing the component in action. The video demonstrates all scenarios including animations and interactions.
+
+### Running the Demo
 
 To run the demo app:
 
