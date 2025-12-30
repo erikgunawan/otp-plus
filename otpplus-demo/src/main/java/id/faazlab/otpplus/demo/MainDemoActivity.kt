@@ -12,7 +12,7 @@ import id.faazlab.otpplus.demo.ui.theme.OTPPlusDemoTheme
 /**
  * Created by erikgunawan on 25/12/25.
  *
- * Main Activity for OTPPlus library demo showcasing various usage scenarios.
+ * Main Activity for OTP+ library demo showcasing various usage scenarios.
  */
 class MainDemoActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

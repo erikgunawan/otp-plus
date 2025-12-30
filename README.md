@@ -1,4 +1,4 @@
-# OTPPlus
+# OTP+
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-blue.svg)](https://kotlinlang.org/)
@@ -23,7 +23,7 @@ Add the dependency to your `build.gradle.kts` (or `build.gradle`):
 
 ```kotlin
 dependencies {
-    implementation("com.github.erikgunawan:otp-plus:1.0.0")
+    implementation("com.github.erikgunawan:otpplus:1.0.0")
 }
 ```
 
@@ -31,7 +31,7 @@ Or if using Groovy:
 
 ```groovy
 dependencies {
-    implementation 'com.github.erikgunawan:otp-plus:1.0.0'
+    implementation 'com.github.erikgunawan:otpplus:1.0.0'
 }
 ```
 
@@ -281,7 +281,7 @@ fun validateOTP(otp: String) {
 
 ## API Reference
 
-### OTPPlus Composable
+### OTP+ Composable (`OTPPlus`)
 
 ```kotlin
 @Composable
@@ -348,7 +348,7 @@ val error3 = UiText.Combined(
 
 ## Demo App
 
-This repository includes a demo app showcasing various usage scenarios:
+This repository includes a demo app showcasing various usage scenarios of OTP+:
 
 1. **Positive Scenario** - Successful OTP validation
 2. **Error Scenario** - Error handling with shake animation
@@ -367,7 +367,7 @@ To run the demo app:
 
 ### Colors
 
-The library uses predefined colors in `OTPPlusColor`:
+The library uses predefined colors in `OTPPlusColor` (internal implementation):
 
 - `Error` - Error state color
 - `Focused` - Focused box border color

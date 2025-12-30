@@ -17,7 +17,7 @@ import id.faazlab.otpplus.UiText
 /**
  * Created by erikgunawan on 25/12/25.
  *
- * Demo screen showcasing various usage scenarios of OTPPlus component:
+ * Demo screen showcasing various usage scenarios of OTP+ component:
  * 1. Positive scenario - OTP successfully validated
  * 2. Error scenario - Invalid OTP with shake animation
  * 3. Empty validation - Validation when submitting with empty field
@@ -39,7 +39,7 @@ fun MainDemoScreen() {
     ) {
         // Header
         Text(
-            text = "OTPPlus Demo",
+            text = "OTP+ Demo",
             style = MaterialTheme.typography.headlineLarge,
             fontWeight = FontWeight.Bold
         )
