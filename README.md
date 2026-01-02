@@ -366,8 +366,6 @@ Try the OTP+ demo app directly on your device! The demo showcases various usage 
   <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="80">
 </a>
 
-> **Note**: Update the Play Store link above with your actual published app URL.
-
 ### Screenshots
 
 #### Main Demo Screen
